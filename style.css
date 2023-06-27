@@ -10,7 +10,41 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
-    /*background: url(bg.jpg);
+    /*background: url(bg.jpg);*/
     background-size: cover;
-    background-position: center;*/
+    background-position: center;
+    background: #4d159cd4;
+}
+
+/* La carte */
+.card{
+    height: 600px;/* hauteur */
+    width: 400px;
+    background: rgba(255, 255, 255, 0.1); /* Bien transparent ainsi */
+    backdrop-filter: blur(5px);/* filtre pour rendre flou */
+    border-radius: 20px;
+    border-top: 2px solid rgba(125, 125, 125); /* bordure seulement de la ligne du haut */
+    border-left: 2px solid rgba(125, 125, 125); /* bordure seulement de la ligne gauche */
+}
+
+/* Le contenu de la carte */
+.card .content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.card .content .picture{
+    width: 150px;
+    height: 150px;
+    margin: 0 auto;
+}
+
+
+/* Image doit par rapport à son parent: */
+.card .content .picture img{
+    width: 100%;
+    height: 100%;
 }
