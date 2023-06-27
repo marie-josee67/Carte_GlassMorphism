@@ -35,6 +35,19 @@ body{
     align-items: center;
     height: 100%;
     padding: 0 20px; /* ici 0 pour le haut et le bas et 20px pour les cotés */
+    position: relative;
+    overflow: hidden; /* cache se qui dépasse de la carte */
+}
+
+.card .content::before{
+    content: "LIVE";
+    position: absolute;
+    top:0;
+    left:0;
+    font-size: 20rem;
+    color: rgba(255, 255, 255, 0.034);
+    font-weight: bolder;
+    line-height: 0.8em;
 }
 
 .card .content .picture{
